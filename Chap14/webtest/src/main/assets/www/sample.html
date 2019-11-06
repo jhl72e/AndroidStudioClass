@@ -1,0 +1,33 @@
+<html>
+    <script language="javascript">
+        function changeFace() {
+
+            document.getElementById("face").src="face_angry.png";
+        }
+
+        function alert_click()
+        {
+            alert("alert 대화 상자를표시합니다.");
+        }
+
+        function confirm_click()
+        {
+            confirm("confirm 대화 상자를 표시합니다.");
+        }
+    </script>
+<body>
+    <a onClick="window.sample.clickOnFace()">
+        <div style="width:120px;
+            margin:0px auto;
+            padding:10px;
+            text-align:center;
+            border:2px solid #202020;"
+            >
+        <img id="face" src="face_normal.png"/>
+        <br>
+    </div>
+    </a>
+        <button id="alert" onclick="alert_click()">Alert</button>
+       <button id ="confirm" onclick="confirm_click()">Confirm</button>
+ </body>
+ </html>
